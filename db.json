@@ -1,0 +1,56 @@
+{
+  "userSurveyData": [
+    {
+      "id": 1,
+      "name": "David",
+      "email": "Davidxarias321@gmail.com",
+      "age": 30,
+      "genre": "seinen",
+      "recommend": "definitely",
+      "features": [
+        "noAds",
+        "commentaryLocal",
+        "forum"
+      ],
+      "comments": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi cum qui distinctio libero, non voluptatum perferendis saepe! Debitis commodi cupiditate amet iure. Quae aperiam dolor ex omnis, quod maxime placeat!"
+    },
+    {
+      "name": "David",
+      "email": "Davidxarias321@gmail.com",
+      "age": "30",
+      "genre": "seinen",
+      "features": [
+        "No Ads",
+        "Commentary Local",
+        "Easy Download"
+      ],
+      "comments": "Hello World",
+      "id": 2
+    },
+    {
+      "name": "Julio",
+      "email": "pepito@gmail.com",
+      "age": "15",
+      "genre": "shoujo",
+      "features": [
+        "No Ads",
+        "Commentary Local"
+      ],
+      "comments": "All good",
+      "id": 3
+    },
+    {
+      "name": "Gabriela",
+      "email": "princesa@gmail.com",
+      "age": "21",
+      "genre": "ecchi",
+      "features": [
+        "No Ads",
+        "Easy Download",
+        "Account System"
+      ],
+      "comments": "Everything is kawaii",
+      "id": 4
+    }
+  ]
+}
