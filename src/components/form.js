@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 
-export default function Form(){
+export default function Form(props){
    
     let refName = useRef(),
     refEmail = useRef(),
@@ -17,30 +17,101 @@ export default function Form(){
     refEasyDownload = useRef(),
     refAccountSystem = useRef();
 
+    const userDataSurvey = {
+      name:"",
+      email:"",
+      age:"",
+      genre:"",
+      recommend:"",
+      features:[],
+      comments:""
+    }
+
+    document.addEventListener("submit", (e) => {
+      if(e.target.matches("#survey")){
+        e.preventDefault();
+        let isChecked;
+        let boxIsChecked;
+      
+      userDataSurvey.name = refName.current.value; 
+      userDataSurvey.email = refEmail.current.value;
+      userDataSurvey.age = refAge.current.value;
+      userDataSurvey.genre = refGenre.current.value;
+      
+      if(refDefinitely.current.checked){
+         isChecked = "Definitely"; 
+      }
+
+      if(refMaybe.current.checked){
+        isChecked = "Maybe"
+      }
+
+      if(refNotSure.current.checked){
+        isChecked = "Not sure"
+      }
+
+      userDataSurvey.recommend = isChecked;
+
+      if(refNoAds.current.checked){
+        boxIsChecked = "No Ads";
+        userDataSurvey.features.push(boxIsChecked);
+      }
+
+      if(refCommentaryLocal.current.checked){
+        boxIsChecked = "Commentary Local";
+        userDataSurvey.features.push(boxIsChecked);
+      }
+
+
+      if(refForum.current.checked){
+        boxIsChecked = "Forum";
+        userDataSurvey.features.push(boxIsChecked);
+      }
+
+
+      if(refEasyDownload.current.checked){
+        boxIsChecked = "Easy Download";
+        userDataSurvey.features.push(boxIsChecked);
+      }
+
+
+      if(refAccountSystem.current.checked){
+        boxIsChecked = "Account System";
+        userDataSurvey.features.push(boxIsChecked);
+      }
+
+      userDataSurvey.comments = refComment.current.value;
+
+        props.dataSurvey(userDataSurvey);
+        props.visible(false);
+      }
+    })
+
     return(
          <div className="formContent">
-        <form >
+
+        <form id="survey" >
            <div className="userData"> 
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" id="name"   ref={refName} />
+          <input type="text" name="name" id="name"   ref={refName} required />
 
           <label htmlFor="email">Email:</label>
-          <input type="email" name="email" id="email" ref={refEmail} />
+          <input type="email" name="email" id="email" ref={refEmail} required/>
 
           <label htmlFor="age">Age:</label>
-          <input type="number" name="age" id="age"  ref={refAge}  />
+          <input type="number" name="age" id="age"  ref={refAge} required />
           </div> 
            
           <div className="favoriteManga">
           <p>What genre of manga do you like most?</p> 
           <select name="genre" id="genre" ref={refGenre}>
             <option value="">---</option>
-            <option value="shonen">Shonen</option>
-            <option value="shoujo">Shoujo</option>
-            <option value="ecchi">Ecchi</option>
-            <option value="isekai">Isekai</option>
-            <option value="harem">Harem</option>
-            <option value="seinen">Seinen</option>
+            <option value="Shonen">Shonen</option>
+            <option value="Shoujo">Shoujo</option>
+            <option value="Ecchi">Ecchi</option>
+            <option value="Isekai">Isekai</option>
+            <option value="Harem">Harem</option>
+            <option value="Seinen">Seinen</option>
           </select>
           </div>
 
@@ -71,7 +142,6 @@ export default function Form(){
           
           <label htmlFor="accountSystem">Account's system and interface</label>
           <input type="checkbox" name="accountSystem" id="accountSystem" value="accountSystem" ref={refAccountSystem}/>
-          
           </div>
            
           <div className="commentsAndSubmit">
@@ -85,7 +155,7 @@ export default function Form(){
           ref={refComment}
           ></textarea>
 
-          <input type="submit" value="Submit"  /> 
+          <input type="submit" value="Submit" className="btnSubmit" /> 
 
           </div> 
         </form>
