@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+/// GENERAL DESCRIPTION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"World Manga Survey" is a survey form developed in React, based on a user satisfaction survey of a fictitious site to read manga (Japanese comics) online.
 
-## Available Scripts
+/// PROJECT STATUS
 
-In the project directory, you can run:
+Finished.
 
-### `npm start`
+// REQUIREMENTS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GIT: Need the GIT version control system to clone the repository from GITHUB
+Nodejs: (Needed to be able to use the NPM package manager system)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+// FACILITY.
 
-### `npm test`
+Once inside the GITHUB of the application and having cloned the project folder in the directory of your choice. Open the command terminal and run "npm install" which will install the necessary dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After the dependencies have been installed run in the terminal command "npm start" to start the application.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// APP REVIEW
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Within the form you can complete a series of data that the application will request, once you have completed it you can send the form data and a card with the previously specified data will be dynamically printed on the screen.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The objective of this application is to be part of my professional portfolio, where concepts such as state management, use of Hooks, unidirectional and bidirectional flow of data through react components, conditional rendering and use of references to the React virtual DOM are explored. Besides responsive layout use of Flex and grid in CSS for styling.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+// Used Technologies
+ReactJs: https://reactjs.org/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// AUTHOR
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Developed by David Enrique Aponte Arias.
+Front End Developer / Desarrolador Web Front End
+Email: Davidxarias321@gmail.com
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+/// DESCRIPCION GENERAL
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+"World Manga Survey" es un formulario de encuestas desarrollado en React, basado en una encuesta de satisfaccion a un usuario de un sitio ficticio para leer manga (comic japones) online.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+/// ESTADO DEL PROYECTO
 
-### Code Splitting
+Terminado.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+// REQUISITOS
 
-### Analyzing the Bundle Size
+GIT: Necesario el sistema de control de versiones GIT para clonar el repositorio desde GITHUB
+Nodejs: (Necesario para poder utilizar el sistema de gestor de paquetes NPM)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+// INSTALACION.
 
-### Making a Progressive Web App
+Una vez dentro del GITHUB de la aplicacion y habiendo clonado la carpeta del proyecto en el directorio de su preferencia. Abra la terminal de comandos y ejecute "npm install" con lo cual podra instalar las dependecias necesarias.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Luego de que se haya instalado las dependencias ejecute en el terminal de comandos "npm start" para iniciar la aplicacion.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+// RESEÑA DE LA APLICACION
 
-### Deployment
+Dentro del formulario podra completar una serie de datos que le pedira la aplicacion, una vez lo haya completado puede enviar los datos del formulario y dinamicamente se imprimira en pantalla una tarjeta con los datos especificados previamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+El objetivo de esta aplicacion es ser parte de mi portafolio profesional, donde se exploran conceptos como el manejo del estado, uso de Hooks, flujo unidireccional y bidireccional de datos a traves de componentes react, renderizado condicional y uso de referencias al virtual DOM de React, un Ddiseño adaptable y uso de Flex y grid en CSS para otorgar estilos. 
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// Tecnologias Usadas
+ReactJs : https://reactjs.org/
+
+// AUTOR
+
+Desarrollado por David Enrique Aponte Arias. 
+Front End Develper / Desarrollador Front end
+Correo: Davidxarias321@gmail.com
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
