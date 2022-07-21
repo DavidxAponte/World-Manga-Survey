@@ -37,6 +37,7 @@ The purpose of this application is to be part of my **professional portfolio**, 
 <h2> AUTHOR </h2>
 
 Developed by **David Enrique Aponte Arias**.
+
 LinkedIn https://www.linkedin.com/in/david-enrique-aponte/
 
 **Front End Developer / Desarrolador Web Front End**
